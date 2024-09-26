@@ -44,7 +44,7 @@ class Library:
         print(f"No book found with the title '{bookName}'.")
 
     def displayAllBooks(self):
-        if not self.books:
+        if len(self.books) == 0:
             print("No books available in the library.")
             return
 
