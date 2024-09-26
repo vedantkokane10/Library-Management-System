@@ -26,6 +26,14 @@ class Test(unittest.TestCase):
         self.assertFalse(LibraryObject.books[0].borrowed)
 
 
+    def test_displayAllBooks(self):
+        LibraryObject = Library()
+        BookObject1 = Book(12345,'Database Management Systems','Raghu Ramakrishnan',1996)
+        BookObject2 = Book(67890,'Operating Systems','John Barnett',1986)
+        LibraryObject.addBook(BookObject1)
+        LibraryObject.addBook(BookObject2)
+        LibraryObject.displayAllBooks()
+        
 
 if __name__ == '__main__':
     unittest.main()
