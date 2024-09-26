@@ -50,5 +50,4 @@ class Library:
 
         print("Books in Library:")
         for book in self.books:
-            status = "Borrowed" if book.borrowed else "Available"
-            print(f"{book.title} - {status}")
+            print(f"{book.title}")
