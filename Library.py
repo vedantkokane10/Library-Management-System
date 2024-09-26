@@ -50,4 +50,5 @@ class Library:
 
         print("Books in Library:")
         for book in self.books:
-            print(f"{book.title}")
+            if book.borrowed == False:
+                print(f"{book.title}")
